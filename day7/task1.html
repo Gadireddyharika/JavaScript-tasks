@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  task1
+        evensum=0;
+        oddsum=0;
+        var a=[23,54,67,64,46,95,98];
+        for (i=0; i<a.length; i++){
+            if(a[i]%2==0){
+            console.log(a[i]);
+            evensum+=a[i]
+        }
+        else{
+            oddsum+=a[i]
+        }
+     }
+      console.log(evensum,oddsum);
+
+
+     // task2
+     var str= "234546937";
+     var evenSum = 0;
+     var oddSum = 0;
+     for (var i = 0; i < str.length; i++) {
+        var num = parseInt(str[i]);
+        if (num % 2 === 0) {
+            evenSum += num;
+    } 
+    else {
+        oddSum += num;
+    }
+}
+    var totalSum = evenSum + oddSum;
+    console.log("Even Sum: " + evenSum);
+    console.log("Odd Sum: " + oddSum);
+    console.log("total Sum:" + totalSum);
+     
+  // task3
+     for (i=1; i<=10; i++){
+            for (j=1; j<=10; j++){
+                var num = i + "*" + j + "=" + i * j;
+                console.log(num);
+                
+            }
+        }
+
+ </script>
+    
+</body>
+</html>
