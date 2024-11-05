@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .container { text-align: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome</h2>
+        <p id="welcomeMessage"></p>
+    </div>
+
+    <script>
+        // Retrieve details from localStorage
+        const username = localStorage.getItem("username");
+        const password = localStorage.getItem("password");
+
+        // Display the welcome message with the username
+        document.getElementById("welcomeMessage").innerText = `Hello, ${username}! Your password is ${password}.`;
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+// Task 4: Filter Long Words
+// Objective: Filter out words longer than 5 characters.
+// Instructions: Given an array of words, use the filter method to create a new array that contains only words with 5 or fewer characters.
+
+const arr = ["apple", "banana", "pear", "grape", "cherry", "melon"];
+const filteredWords = filterLongWords(arr);
+function filterLongWords(words) {
+  return words.filter(word => word.length <= 5);
+}
+console.log(filteredWords); // Output: ["apple", "pear", "grape", "melon"]
+
+</script>
+</body>
+</html>
