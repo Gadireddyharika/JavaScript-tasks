@@ -7,12 +7,36 @@
 </head>
 <body>
     <script>
-        // 4) find the even and odd numbers in an array [12,3,5,6,22,56,29] 
-// and print the evensum and oddsum# Given array
+//    4) Take a heterogenious array and separate each data type into new array
+// // hints : use loop, typeof and push method 
+// // inp: let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
+// // out : 
+// // num=[3,4,5,6]
+// // str=["apple","banana","mango","banana"]
+// // bool=[true]
+// // obj=[{name: "object"}]/j
+let arr = ["apple", "banana", "mango", "banana", 3, 4, 5, 6, true, {name: "object"}];
 
+let num = [];
+let str = [];
+let bool = [];
+let obj = [];
 
-
-
+for (let i = 0; i < arr.length; i++) {
+  if (typeof arr[i] === "number") {
+    num.push(arr[i]);
+  } else if (typeof arr[i] === "string") {
+    str.push(arr[i]);
+  } else if (typeof arr[i] === "boolean") {
+    bool.push(arr[i]);
+  } else if (typeof arr[i] === "object") {
+    obj.push(arr[i]);
+  }
+}
+console.log("num =", num);
+console.log("str =", str);
+console.log("bool =", bool);
+console.log("obj =", obj);
 
 
 
