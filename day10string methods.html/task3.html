@@ -9,14 +9,14 @@
     <script>
         // Task 3: take prompt and Reverse a String
         // hints: use split and reverse and join method
-        
-        
-
-        
-        
-
-
-
+   let reverseString=prompt("Enter a string name");  
+    function reverseString(str) {
+   let splitString = str.split("");
+   let reversedArray = splitString.reverse();
+   let reversedString = reversedArray.join("");
+    return reversedString;
+}
+console.log(reverseString("hello"));
 </script>
     
 </body>

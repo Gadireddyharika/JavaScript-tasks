@@ -9,14 +9,20 @@
     <script>
         // 3) find the even and odd numbers in an array [12,3,5,6,22,56,29] 
 // and print the evensum and oddsum
+let arr = [12, 3, 5, 6, 22, 56, 29];
+let evenSum = 0;
+let oddSum = 0;
 
+arr.forEach(num => {
+    if (num % 2 === 0) {
+        evenSum += num;
+    } else {
+        oddSum += num;
+    }
+});
 
-
-
-
-
-
-    </script>
-    
+console.log("Even Sum:", evenSum);
+console.log("Odd Sum:", oddSum);
+</script>
 </body>
 </html>
